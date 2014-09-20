@@ -39,8 +39,8 @@ public class MyActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_my);
-        setContentView(R.layout.frag2);
+        setContentView(R.layout.activity_my);
+        //setContentView(R.layout.frag2);
         //setContentView(R.layout.fragment_my);
 
 
@@ -143,9 +143,10 @@ public class MyActivity extends Activity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_my, container, false);
+            View rootView = inflater.inflate(R.layout.frag2, container, false);
             return rootView;
         }
+
     }
 
 }

@@ -5,4 +5,15 @@
         android:title="@string/action_settings"
         android:orderInCategory="100"
         android:showAsAction="never" />
+    <item android:id="@+id/love"
+        android:title="@string/love"
+        android:icon="@drawable/heart"/>
+    <item android:id="@+id/sex"
+        android:title="@string/Sex"/>
+    <item android:id="@+id/drugs"
+        android:title="@string/Drugs"
+        android:icon="@drawable/beer"/>
+
+
+
 </menu>

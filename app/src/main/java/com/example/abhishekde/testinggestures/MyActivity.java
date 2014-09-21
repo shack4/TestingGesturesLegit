@@ -16,10 +16,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.content.*;
 import android.widget.TextView;
+import android.view.*;
+import android.*;
 
 
-public class MyActivity extends Activity {
+public class   MyActivity extends Activity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -147,6 +150,34 @@ public class MyActivity extends Activity {
             return rootView;
         }
 
+
+        @Override
+        public boolean onOptionsItemSelected(MenuItem item) {
+            // Handle item selection
+
+            switch (item.getItemId()) {
+                case R.id.love:
+                    Intent sendIntent = new Intent();
+                    sendIntent.setAction(Intent.ACTION_SEND);
+          //          sendIntent.setType(HTTP.PLAIN_TEXT_TYPE); // "text/plain" MIME type
+
+// Verify that the intent will resolve to an activity
+                    //if (sendIntent.resolveActivity(getPackageManager()) != null) {
+                        startActivity(sendIntent);
+                    }
+   //                 break;
+
+                    return true;
+     //           case R.id.sex:
+           //         showHelp();
+           //         return true;
+       //         case R.id.drugs:
+
+         //       default:
+           //         return super.onOptionsItemSelected(item);
+            }
+        }
+
     }
 
-}
+
